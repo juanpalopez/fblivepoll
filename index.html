@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row post">
+      <div class="image1">
+      </div>
+      <div class="image2">
+        <div class="image2a">
+          <div class="textarea sailor likes">
+            <span class="counter">0</span>
+          </div>
+        </div>
+        <div class="image2b"></div>
+        <div class="image2c">
+          <div class="textarea crash happy">
+            <span class="counter">0</span>
+          </div>
+
+        </div>
+        <div class="image2d"></div>
+      </div>
+      <div class="image3"></div>
+      <div class="image4">
+        <div class="image4a"></div>
+        <div class="image4b">
+          <div class="textarea draco fml">
+            <span class="counter">0</span>
+          </div>
+        </div>
+        <div class="image4c"></div>
+        <div class="image4d">
+          <div class="textarea trunks shock">
+            <span class="counter">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="image5"></div>
+    </div>
+  </div>
+  <script src="static/jquery.min.js"></script>
+  <script src="static/lodash.min.js"></script>
+  <script>
+      "use strict";
+      var access_token = 'PAGE_TOKEN'; // PASTE HERE YOUR FACEBOOK ACCESS TOKEN
+      var postID = 'POST_ID'; // PASTE HERE YOUR POST ID
+      var refreshTime = 1; // Refresh time in seconds
+      var defaultCount = 0; // Default count to start with
+
+      var reactions = ['LIKE', 'LOVE', 'WOW', 'HAHA', 'SAD', 'ANGRY'].map(function (e) {
+          var code = 'reactions_' + e.toLowerCase();
+          return 'reactions.type(' + e + ').limit(0).summary(total_count).as(' + code + ')'
+      }).join(',');
+
+      var v1 = $('.likes .counter');
+      var v2 = $('.happy .counter');
+      var v3 = $('.fml .counter');
+      var v4 = $('.shock .counter');
+
+      function refreshCounts() {
+          var url = 'https://graph.facebook.com/v2.12/?ids=' + postID + '&fields=' + reactions + '&access_token=' + access_token;
+          $.getJSON(url, function(res){
+              // console.log(v1);
+              v1.text(defaultCount + res[postID].reactions_like.summary.total_count);
+              v2.text(defaultCount + res[postID].reactions_love.summary.total_count);
+              v3.text(defaultCount + res[postID].reactions_haha.summary.total_count);
+              v4.text(defaultCount + res[postID].reactions_wow.summary.total_count);
+          });
+      }
+
+      $(document).ready(function(){
+          setInterval(refreshCounts, refreshTime * 1000);
+          refreshCounts();
+      });
+  </script>
+</body>

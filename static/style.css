@@ -1,0 +1,155 @@
+.container{
+  margin-top: 20px
+}
+
+.post{
+  width: 800px;
+}
+
+.image1{
+  height:226px;
+  width: 800px;
+  background: url(../images/Sorteo-2018_01.jpg);
+  background-size: contain;
+
+}
+
+.image2{
+  display: inline-block;
+  float: left;
+}
+
+.image2a{
+  height:40.8px;
+  width: 143.5px;
+  float: left;
+  background: url(../images/Sorteo-2018_02.jpg);
+  background-size: contain;
+  position: relative;
+}
+
+.image2b{
+  height:40.8px;
+  width: 257px;
+  float: left;
+  background: url(../images/Sorteo-2018_03.jpg);
+  background-size: contain;
+}
+
+.image2c{
+  height:40.8px;
+  width: 193px;
+  float: left;
+  background: url(../images/Sorteo-2018_04.jpg);
+  background-size: contain;
+  position: relative;
+}
+
+.image2d{
+  height:40.8px;
+  width: 206.4px;
+  float: left;
+  background: url(../images/Sorteo-2018_05.jpg);
+  background-size: contain;
+}
+
+.image3{
+  height: 162.8px;
+  width: 800px;
+  background: url(../images/Sorteo-2018_06.jpg);
+  background-size: contain;
+}
+
+/*
+  IMAGE 4
+*/
+.image4{
+  display: inline-block;
+  float: left;
+}
+
+.image4a{
+  height:55.2px;
+  width: 204px;
+  float: left;
+  background: url(../images/Sorteo-2018_07.jpg);
+  background-size: contain;
+}
+
+.image4b{
+  height:55.2px;
+  width: 196px;
+  float: left;
+  background: url(../images/Sorteo-2018_08.jpg);
+  background-size: contain;
+  position: relative;
+}
+
+.image4c{
+  height:55.2px;
+  width: 193px;
+  float: left;
+  background: url(../images/Sorteo-2018_09.jpg);
+  background-size: contain;
+}
+
+.image4d{
+  height:55.2px;
+  width: 206.8px;
+  float: left;
+  background: url(../images/Sorteo-2018_10.jpg);
+  background-size: contain;
+  position: relative;
+}
+
+/*
+  IMAGE 5
+*/
+.image5{
+  height: 75.6px;
+  width: 800px;
+  background: url(../images/Sorteo-2018_11.jpg);
+  background-size: contain;
+}
+
+/*
+  TEXT
+*/
+.textarea{
+  height: 25px;
+  width:88px;
+  text-align: center;
+}
+.sailor{
+  position: absolute;
+  left:28.7px;
+  top: -2px;
+}
+
+.crash{
+  position: absolute;
+  left:28px;
+  top: -2px;
+}
+
+.draco{
+  position: absolute;
+  left:62px;
+  top: 4px;
+}
+
+.trunks{
+  position: absolute;
+  left:28px;
+  top: 2px;
+}
+
+p{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.counter{
+  font-weight: bold;
+  font-size: 30px;
+}
