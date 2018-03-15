@@ -3,12 +3,12 @@
 }
 
 .post{
-  width: 800px;
+  width: 1120px;
 }
 
 .image1{
-  height:226px;
-  width: 800px;
+  height:298.5px;
+  width: 1120px;
   background: url(../images/Sorteo-2018_01.jpg);
   background-size: contain;
 
@@ -20,42 +20,42 @@
 }
 
 .image2a{
-  height:40.8px;
-  width: 143.5px;
+  height: 51.5px;
+  width: 280px;
   float: left;
   background: url(../images/Sorteo-2018_02.jpg);
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 
 .image2b{
-  height:40.8px;
-  width: 257px;
+  height: 51.5px;
+  width: 280px;
   float: left;
   background: url(../images/Sorteo-2018_03.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 .image2c{
-  height:40.8px;
-  width: 193px;
+  height: 51.5px;
+  width: 280px;
   float: left;
   background: url(../images/Sorteo-2018_04.jpg);
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 
 .image2d{
-  height:40.8px;
-  width: 206.4px;
+  height: 51.5px;
+  width: 280px;
   float: left;
   background: url(../images/Sorteo-2018_05.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 .image3{
-  height: 162.8px;
-  width: 800px;
+  height: 190px;
+  width: 1120px;
   background: url(../images/Sorteo-2018_06.jpg);
   background-size: contain;
 }
@@ -64,38 +64,40 @@
   IMAGE 4
 */
 .image4{
-  display: inline-block;
+  /*display: inline-block;*/
   float: left;
 }
 
 .image4a{
-  height:55.2px;
-  width: 204px;
+  height: 51.5px;
+  width: 280px;
   float: left;
   background: url(../images/Sorteo-2018_07.jpg);
-  background-size: contain;
+  background-size: cover;
+  position: relative;
 }
 
 .image4b{
-  height:55.2px;
-  width: 196px;
+  height: 51.5px;
+  width: 280px;
   float: left;
   background: url(../images/Sorteo-2018_08.jpg);
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 
 .image4c{
-  height:55.2px;
-  width: 193px;
+  height: 51.5px;
+  width: 280px;
   float: left;
   background: url(../images/Sorteo-2018_09.jpg);
-  background-size: contain;
+  background-size: cover;
+  position: relative;
 }
 
 .image4d{
-  height:55.2px;
-  width: 206.8px;
+  height: 51.5px;
+  width: 280px;
   float: left;
   background: url(../images/Sorteo-2018_10.jpg);
   background-size: contain;
@@ -106,8 +108,8 @@
   IMAGE 5
 */
 .image5{
-  height: 75.6px;
-  width: 800px;
+  height: 108px;
+  width: 1120px;
   background: url(../images/Sorteo-2018_11.jpg);
   background-size: contain;
 }
@@ -122,25 +124,23 @@
 }
 .sailor{
   position: absolute;
-  left:28.7px;
-  top: -2px;
+  left:68.7px;
 }
 
 .crash{
   position: absolute;
-  left:28px;
-  top: -2px;
+  left:98px;
 }
 
 .draco{
   position: absolute;
-  left:62px;
+  left:108px;
   top: 4px;
 }
 
 .trunks{
   position: absolute;
-  left:28px;
+  left:38px;
   top: 2px;
 }
 
